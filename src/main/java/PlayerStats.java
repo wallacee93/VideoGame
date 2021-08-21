@@ -15,5 +15,13 @@ public class PlayerStats {
         this.blockAverage = blockAverage;
     }
 
-
+    @Override
+    public String toString() {
+        return "PlayerStats: " +
+                "\nFieldGoal Percentage: " + fieldGoalPercentage +
+                " Assist Average: " + assistAverage +
+                " Rebound Average: " + reboundAverage +
+                " StealAverage: " + stealAverage +
+                " Block Average: " + blockAverage;
+    }
 }

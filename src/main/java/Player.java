@@ -6,7 +6,7 @@ public class Player{
     String position;
     PlayerStats stats;
     Team team;
-
+    Mode3on3 mode3on3;
     public Player(String name, int jerseyNumber, int overAllRanking, String position) {
         this.name = name;
         this.jerseyNumber = jerseyNumber;
@@ -14,12 +14,24 @@ public class Player{
         this.position = position;
     }
 
+    public PlayerStats getStats() {
+        return stats;
+    }
+
+    public void setTeam(Team team) {
+        this.team = team;
+    }
+
+    public Team getTeam() {
+        return team;
+    }
+
     @Override
     public String toString() {
         return "Player: " +
                 "\nName: " + name +
-                " \nJersey Number: " + jerseyNumber +
-                " \nOver All Ranking: " + overAllRanking +
-                " \nPosition: " + position;
+                " Jersey Number: " + jerseyNumber +
+                " Over All Ranking: " + overAllRanking +
+                " Position: " + position;
     }
 }
