@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Mode3on3 {
     int teamOneScore;
     int teamTwoScore;
@@ -8,52 +10,80 @@ public class Mode3on3 {
     boolean teamTwoMake;
 
 
-    public void startGame(){
+    public void startGame() {
+        System.out.println("First team to 21 wins");
 
     }
-    public void shootJumper(Player player){
+
+    public void shootJumper(Player player) {
         System.out.println(player + " shoots the jumper for two");
-        if(teamOneMake){
-            teamOneScore+=2;
-        }
-        else{
+        Random jumper = new Random();
+        teamOneMake = jumper.nextBoolean();
+
+        if (teamOneMake) {
+            teamOneScore += 2;
+        } else {
             System.out.println(player + " missed the jumper");
         }
-        if(teamTwoMake){
-            teamTwoScore+=2;
-        }
-        else{
+        teamTwoMake = jumper.nextBoolean();
+        if (teamTwoMake) {
+            teamTwoScore += 2;
+        } else {
             System.out.println(player + " missed the jumper ");
         }
     }
 
-    public void shootTheThree(Player player){
+    public void shootTheThree(Player player) {
         System.out.println(player + " For three!!");
+        Random three = new Random();
+        teamOneMake = three.nextBoolean();
 
-    }
-    public void freeThrow(){
-    }
+        if (teamOneMake) {
+            teamOneScore += 3;
+            System.out.println(player + "Splash!!");
+        } else {
+            System.out.println(player + "missed the 3 pointer");
+        }
+        teamTwoMake = three.nextBoolean();
+        if(teamTwoMake){
+            teamTwoScore+=3;
+            System.out.println("ITS GOOD!!");
+        }
+        else {
+            System.out.println(player + "missed the 3 pointer");
+        }
 
-    public void dunk(){
-    }
+        public void freeThrow () {
+
+        }
+
+        public void dunk () {
+        }
 
 
-    public void crossOver(){
+        public void crossOver () {
 
-    }
-    public void foul(){
+        }
 
-    }
-    public void timeOut(){ // MAYBE....
+        public void foul () {
 
-    }
-    public void pass(){
+        }
 
-    }
-    public void steal(){
+        public void timeOut () { // MAYBE....
 
-    }
-    public void block(){
+        }
 
+        public void pass () {
+
+        }
+
+        public void steal () {
+
+        }
+
+        public void block () {
+
+        }
     }
 }
+
