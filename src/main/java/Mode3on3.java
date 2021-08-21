@@ -3,16 +3,16 @@ import java.util.Random;
 public class Mode3on3 {
     int teamOneScore;
     int teamTwoScore;
-    int ONE_POINT = 1;
     int TWO_POINTS = 2;
     int THREE_POINTS = 3;
     boolean teamOneMake;
     boolean teamTwoMake;
+    boolean hasPossession;
+    boolean stoleBall;
 
 
     public void startGame() {
         System.out.println("First team to 21 wins");
-
     }
 
     public void shootJumper(Player player) {
@@ -21,13 +21,13 @@ public class Mode3on3 {
         teamOneMake = jumper.nextBoolean();
 
         if (teamOneMake) {
-            teamOneScore += 2;
+            teamOneScore += TWO_POINTS;
         } else {
             System.out.println(player + " missed the jumper");
         }
         teamTwoMake = jumper.nextBoolean();
         if (teamTwoMake) {
-            teamTwoScore += 2;
+            teamTwoScore += TWO_POINTS;
         } else {
             System.out.println(player + " missed the jumper ");
         }
@@ -39,51 +39,52 @@ public class Mode3on3 {
         teamOneMake = three.nextBoolean();
 
         if (teamOneMake) {
-            teamOneScore += 3;
+            teamOneScore += THREE_POINTS;
             System.out.println(player + "Splash!!");
         } else {
-            System.out.println(player + "missed the 3 pointer");
+            System.out.println(player + " missed the 3 pointer");
         }
         teamTwoMake = three.nextBoolean();
-        if(teamTwoMake){
-            teamTwoScore+=3;
+        if (teamTwoMake) {
+            teamTwoScore += THREE_POINTS;
             System.out.println("ITS GOOD!!");
-        }
-        else {
-            System.out.println(player + "missed the 3 pointer");
+        } else {
+
+            System.out.println(player + " missed the 3 pointer");
         }
 
-//        public void freeThrow () {
-//
-//        }
-//
-//        public void dunk () {
-//        }
-//
-//
-//        public void crossOver () {
-//
-//        }
-//
-//        public void foul () {
-//
-//        }
-//
-//        public void timeOut () { // MAYBE....
-//
-//        }
-//
-//        public void pass () {
-//
+//        public void dunk (Player player){
+//            System.out.println(player + " For the slam!!");
+//            Random slam = new Random();
+//            teamOneMake = slam.nextBoolean();
+//            if (teamOneMake) {
+//                teamOneScore += TWO_POINTS;
+//                System.out.println("PUT EM ON A POSTER!!!");
+//            } else {
+//                System.out.println("Rim choked!");
+//            }
+//            teamTwoMake = slam.nextBoolean();
+//            if (teamTwoMake) {
+//                teamTwoScore += TWO_POINTS;
+//                System.out.println("PUT EM ON A POSTER!!!");
+//            } else {
+//                System.out.println("Rim choked!");
+//            }
 //        }
 //
 //        public void steal () {
+//            Random st = new Random();
+//            stoleBall = st.nextBoolean();
+//            if (stoleBall) {
+//                hasPossession = false;
+//                System.out.println("Turnover!");
+//            }
 //
+//            public boolean getHasPossession () {
+//                return hasPossession;
+//            }
 //        }
-//
-//        public void block () {
-//
-//        }
+
     }
 }
 
