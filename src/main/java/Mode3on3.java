@@ -13,6 +13,7 @@ public class Mode3on3 {
 
 
     public void startGame() {
+
         System.out.println("First team to 21 wins");
 
 
@@ -56,64 +57,61 @@ public class Mode3on3 {
 
             System.out.println(player + " missed the 3 pointer");
         }
-
-        public void dunk(Player player){
-            System.out.println(player + " For the slam!!");
-            Random slam = new Random();
-            teamOneMake= slam.nextBoolean();
-            if(teamOneMake){
-                teamOneScore+=TWO_POINTS;
-                System.out.println("PUT EM ON A POSTER!!!");
-            }
-            else{
-                System.out.println("Rim choked!");
-            }
-            teamTwoMake = slam.nextBoolean();
-            if(teamTwoMake){
-                teamTwoScore+= TWO_POINTS;
-                System.out.println("PUT EM ON A POSTER!!!");
-            }
-            else{
-                System.out.println("Rim choked!");
-            }
-        }
-
-
-        public void crossOver(Player player) {
-
-        }
+//
+//        public void dunk(Player player){
+//            System.out.println(player + " For the slam!!");
+//            Random slam = new Random();
+//            teamOneMake= slam.nextBoolean();
+//            if(teamOneMake){
+//                teamOneScore+=TWO_POINTS;
+//                System.out.println("PUT EM ON A POSTER!!!");
+//            }
+//            else{
+//                System.out.println("Rim choked!");
+//            }
+//            teamTwoMake = slam.nextBoolean();
+//            if(teamTwoMake){
+//                teamTwoScore+= TWO_POINTS;
+//                System.out.println("PUT EM ON A POSTER!!!");
+//            }
+//            else{
+//                System.out.println("Rim choked!");
+//            }
+//        }
 
 
-
-        public void pass() {
-
-
-        }
-
-        public void steal() {
-            Random st = new Random();
-            stoleBall = st.nextBoolean();
-            if(stoleBall){
-                hasPossession= false;
-                System.out.println("Turnover!");
-            }
-
-
-            public boolean getHasPossession(){
-                return hasPossession;
-            }
-        }
-
-        public void block () {
-
-        }
+//        public void crossOver(Player player) {
+//
+//        }
+//
+//
+//
+//        public void pass() {
+//
+//
+//        }
+//
+//        public void steal() {
+//            Random st = new Random();
+//            stoleBall = st.nextBoolean();
+//            if(stoleBall){
+//                hasPossession= false;
+//                System.out.println("Turnover!");
+//            }
+//
+//
+//            public boolean getHasPossession(){
+//                return hasPossession;
+//            }
+//        }
+//
+//        public void block () {
+//
+//        }
 
    
         }
 
-//        public void freeThrow () {
-//
-//        }
 //
 //        public void dunk () {
 //        }
@@ -123,12 +121,7 @@ public class Mode3on3 {
 //
 //        }
 //
-//        public void foul () {
-//
-//        }
-//
-//        public void timeOut () { // MAYBE....
-//
+
 //        }
 //
 //        public void pass () {
@@ -144,5 +137,5 @@ public class Mode3on3 {
 //        }
 
     }
-}
+
 
