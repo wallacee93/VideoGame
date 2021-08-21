@@ -1,9 +1,9 @@
 public class Mode3on3 {
     int teamOneScore;
     int teamTwoScore;
-    int onePoint;
-    int twoPoints;
-    int threePoints;
+    int ONE_POINT = 1;
+    int TWO_POINTS = 2;
+    int THREE_POINTS = 3;
     boolean teamOneMake;
     boolean teamTwoMake;
 
