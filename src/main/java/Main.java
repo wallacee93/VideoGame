@@ -24,15 +24,35 @@ public class Main {
                                                 0.6);
         Team teamOne = new Team("Kardashians");
         Team teamTwo = new Team("Spidey Sense");
-
         Mode3on3 mode3on3 = new Mode3on3();
 
-//        kimKardashian.team.setTeamName("Kardashians");
-//        kimKardashian.team.addPlayer(daffyDuck);
-        System.out.println(kimKardashian.getTeam());
+        System.out.println("Create Team One :");
+        kimKardashian.team.setTeamName("Kardashians");
+        kimKardashian.team.addPlayer(daffyDuck);
+        kimKardashian.team.addPlayer(jamesHarden);
 
-//        kimKardashian.mode3on3.shootJumper(kimKardashian);
-//        spiderMan.mode3on3.
+        System.out.println("Create Team Two");
+        spiderMan.team.setTeamName("Spidey Sense");
+        spiderMan.team.addPlayer(bugsBunny);
+        spiderMan.team.addPlayer(lebronJames);
+
+
+        kimKardashian.mode3on3.startGame();
+        spiderMan.mode3on3.startGame();
+
+
+        kimKardashian.mode3on3.shootJumper(jamesHarden);
+
+        spiderMan.mode3on3.shootTheThree(lebronJames);
+
+        spiderMan.mode3on3.shootTheThree(spiderMan);
+
+        kimKardashian.mode3on3.shootJumper(kimKardashian);
+
+
+
+
+
 
 
 

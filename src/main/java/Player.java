@@ -7,6 +7,7 @@ public class Player{
     PlayerStats stats;
     Team team;
     Mode3on3 mode3on3;
+
     public Player(String name, int jerseyNumber, int overAllRanking, String position) {
         this.name = name;
         this.jerseyNumber = jerseyNumber;
