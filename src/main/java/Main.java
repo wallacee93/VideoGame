@@ -12,5 +12,19 @@ public class Main {
         Team team = new Team("Squad 1");
 
 
+        kimKardashian.stats = new PlayerStats(20.2, 3.1, 1.1,2.2,
+                                                0.1);
+        daffyDuck.stats = new PlayerStats(51.2, 1.3, 8.2, 0.1,
+                                            2.3);
+        jamesHarden.stats = new PlayerStats(47.1, 10.9, 8.5, 1.3,
+                                            0.8);
+        spiderMan.stats = new PlayerStats(50.5, 10.3, 7.3, 2.3,
+                                            3.2);
+        bugsBunny.stats = new PlayerStats(40.8, 8.9, 0.1, 6.3,
+                                            0.5);
+        lebronJames.stats = new PlayerStats(51.3, 7.8, 7.7, 1.1,
+                                                0.6);
+
+
     }
 }
