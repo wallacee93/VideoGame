@@ -6,13 +6,6 @@ public class PlayerStats {
     double steal;
     double block;
 
-    public PlayerStats(double fieldGoal, double assist, double rebound, double steal, double block){
-        this.fieldGoal = fieldGoal;
-        this.assist = assist;
-        this.rebound = rebound;
-        this.steal = steal;
-        this.block = block;
-    }
 
     public double getFieldGoal() {
         return fieldGoal;
@@ -63,5 +56,6 @@ public class PlayerStats {
                 " \nsteal: " + steal +
                 " \nblock: " + block ;
     }
+
 
 }
