@@ -53,6 +53,7 @@ public class Mode3on3 {
             System.out.println("ITS GOOD!!");
         }
         else {
+
             System.out.println(player + " missed the 3 pointer");
         }
 
@@ -106,6 +107,42 @@ public class Mode3on3 {
         public void block () {
 
         }
+
+   
+        }
+
+//        public void freeThrow () {
+//
+//        }
+//
+//        public void dunk () {
+//        }
+//
+//
+//        public void crossOver () {
+//
+//        }
+//
+//        public void foul () {
+//
+//        }
+//
+//        public void timeOut () { // MAYBE....
+//
+//        }
+//
+//        public void pass () {
+//
+//        }
+//
+//        public void steal () {
+//
+//        }
+//
+//        public void block () {
+//
+//        }
+
     }
 }
 

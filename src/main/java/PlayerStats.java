@@ -1,61 +1,27 @@
 public class PlayerStats {
 
-    double fieldGoal;
-    double assist;
-    double rebound;
-    double steal;
-    double block;
+    double fieldGoalPercentage;
+    double assistAverage;
+    double reboundAverage;
+    double stealAverage;
+    double blockAverage;
 
-
-    public double getFieldGoal() {
-        return fieldGoal;
-    }
-
-    public void setFieldGoal(double fieldGoal) {
-        this.fieldGoal = fieldGoal;
-    }
-
-    public double getAssist() {
-        return assist;
-    }
-
-    public void setAssist(double assist) {
-        this.assist = assist;
-    }
-
-    public double getRebound() {
-        return rebound;
-    }
-
-    public void setRebound(double rebound) {
-        this.rebound = rebound;
-    }
-
-    public double getSteal() {
-        return steal;
-    }
-
-    public void setSteal(double steal) {
-        this.steal = steal;
-    }
-
-    public double getBlock() {
-        return block;
-    }
-
-    public void setBlock(double block) {
-        this.block = block;
+    PlayerStats(double fieldGoalPercentage, double assistAverage, double reboundAverage,
+                double stealAverage, double blockAverage){
+        this.fieldGoalPercentage =fieldGoalPercentage;
+        this.assistAverage = assistAverage;
+        this.reboundAverage = reboundAverage;
+        this.stealAverage = stealAverage;
+        this.blockAverage = blockAverage;
     }
 
     @Override
     public String toString() {
         return "PlayerStats: " +
-                " \nfieldGoal: " + fieldGoal +
-                " \nassist: " + assist +
-                " \nrebound: " + rebound +
-                " \nsteal: " + steal +
-                " \nblock: " + block ;
+                "\nFieldGoal Percentage: " + fieldGoalPercentage +
+                " Assist Average: " + assistAverage +
+                " Rebound Average: " + reboundAverage +
+                " StealAverage: " + stealAverage +
+                " Block Average: " + blockAverage;
     }
-
-
 }
