@@ -31,4 +31,29 @@ public class Mode3on3 {
         System.out.println(player + " For three!!");
 
     }
+    public void freeThrow(){
+    }
+
+    public void dunk(){
+    }
+
+
+    public void crossOver(){
+
+    }
+    public void foul(){
+
+    }
+    public void timeOut(){ // MAYBE....
+
+    }
+    public void pass(){
+
+    }
+    public void steal(){
+
+    }
+    public void block(){
+
+    }
 }
